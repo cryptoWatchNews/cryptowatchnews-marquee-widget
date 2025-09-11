@@ -1,0 +1,60 @@
+{
+  "name": "crypto-marquee-widget",
+  "version": "1.0.0",
+  "description": "A beautiful, lightweight, and customizable cryptocurrency price ticker widget for any website",
+  "main": "dist/crypto-marquee-widget.js",
+  "unpkg": "dist/crypto-marquee-widget.min.js",
+  "jsdelivr": "dist/crypto-marquee-widget.min.js",
+  "files": [
+    "dist/",
+    "docs/",
+    "examples/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/dev.js",
+    "test": "echo \"No tests yet\" && exit 0",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "crypto",
+    "widget",
+    "marquee",
+    "ticker",
+    "bitcoin",
+    "ethereum",
+    "price",
+    "real-time",
+    "javascript",
+    "vanilla-js",
+    "responsive",
+    "embed",
+    "website"
+  ],
+  "author": {
+    "name": "CryptoWatchNews",
+    "email": "contact@cryptowatchnews.com",
+    "url": "https://www.cryptowatchnews.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/cryptowatchnews/crypto-marquee-widget#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptowatchnews/crypto-marquee-widget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cryptowatchnews/crypto-marquee-widget/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
+  "devDependencies": {},
+  "dependencies": {}
+}
