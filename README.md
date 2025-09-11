@@ -27,7 +27,7 @@ Add this single line of HTML to your website:
 
 ```html
 <div id="crypto-marquee"></div>
-<script src="https://cdn.jsdelivr.net/npm/crypto-marquee-widget@latest/dist/crypto-marquee-widget.min.js"></script>
+<script src="https://www.cryptowatchnews.com/widgets/crypto-marquee-widget.js"></script>
 ```
 
 **That's it!** 🎉 Your crypto ticker will automatically load and display live prices.
@@ -41,19 +41,19 @@ Visit our **[interactive demo](https://www.cryptowatchnews.com/crypto-marquee-wi
 ### Default Widget
 ```html
 <div id="crypto-marquee"></div>
-<script src="https://cdn.jsdelivr.net/npm/crypto-marquee-widget@latest/dist/crypto-marquee-widget.min.js"></script>
+<script src="https://www.cryptowatchnews.com/widgets/crypto-marquee-widget.js"></script>
 ```
 
 ### Dark Theme
 ```html
 <div id="crypto-marquee" data-theme="dark"></div>
-<script src="https://cdn.jsdelivr.net/npm/crypto-marquee-widget@latest/dist/crypto-marquee-widget.min.js"></script>
+<script src="https://www.cryptowatchnews.com/widgets/crypto-marquee-widget.js"></script>
 ```
 
 ### Fast Animation
 ```html
 <div id="crypto-marquee" data-speed="20"></div>
-<script src="https://cdn.jsdelivr.net/npm/crypto-marquee-widget@latest/dist/crypto-marquee-widget.min.js"></script>
+<script src="https://www.cryptowatchnews.com/widgets/crypto-marquee-widget.js"></script>
 ```
 
 ### Compact Version
@@ -62,7 +62,7 @@ Visit our **[interactive demo](https://www.cryptowatchnews.com/crypto-marquee-wi
      data-count="10" 
      data-show-change="false">
 </div>
-<script src="https://cdn.jsdelivr.net/npm/crypto-marquee-widget@latest/dist/crypto-marquee-widget.min.js"></script>
+<script src="https://www.cryptowatchnews.com/widgets/crypto-marquee-widget.js"></script>
 ```
 
 ## ⚙️ Configuration
@@ -88,7 +88,7 @@ Customize your widget using HTML data attributes:
      data-show-change="true"
      data-show-powered-by="false">
 </div>
-<script src="https://cdn.jsdelivr.net/npm/crypto-marquee-widget@latest/dist/crypto-marquee-widget.min.js"></script>
+<script src="https://www.cryptowatchnews.com/widgets/crypto-marquee-widget.js"></script>
 ```
 
 ## 🌐 Platform Integration
@@ -99,7 +99,7 @@ Customize your widget using HTML data attributes:
 Add to your theme's `footer.php`:
 ```php
 <div id="crypto-marquee" data-theme="light"></div>
-<script src="https://cdn.jsdelivr.net/npm/crypto-marquee-widget@latest/dist/crypto-marquee-widget.min.js"></script>
+<script src="https://www.cryptowatchnews.com/widgets/crypto-marquee-widget.js"></script>
 ```
 
 #### Method 2: Custom HTML Block
@@ -115,7 +115,7 @@ import { useEffect } from 'react';
 function CryptoMarquee({ speed = 40, theme = 'light' }) {
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/crypto-marquee-widget@latest/dist/crypto-marquee-widget.min.js';
+    script.src = 'https://www.cryptowatchnews.com/widgets/crypto-marquee-widget.js';
     script.defer = true;
     document.body.appendChild(script);
     
@@ -138,7 +138,7 @@ export default {
   props: ['speed', 'theme'],
   mounted() {
     const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/crypto-marquee-widget@latest/dist/crypto-marquee-widget.min.js';
+    script.src = 'https://www.cryptowatchnews.com/widgets/crypto-marquee-widget.js';
     document.body.appendChild(script);
   }
 }
@@ -151,14 +151,14 @@ Add to your theme's `theme.liquid` before `</body>`:
 
 ```liquid
 <div id="crypto-marquee" data-count="10"></div>
-<script src="https://cdn.jsdelivr.net/npm/crypto-marquee-widget@latest/dist/crypto-marquee-widget.min.js"></script>
+<script src="https://www.cryptowatchnews.com/widgets/crypto-marquee-widget.js"></script>
 ```
 
 ## 📦 Installation
 
 ### Via CDN (Recommended)
 ```html
-<script src="https://cdn.jsdelivr.net/npm/crypto-marquee-widget@latest/dist/crypto-marquee-widget.min.js"></script>
+<script src="https://www.cryptowatchnews.com/widgets/crypto-marquee-widget.js"></script>
 ```
 
 ### Via npm
