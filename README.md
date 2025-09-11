@@ -202,7 +202,7 @@ npm start
 
 ## 📊 Performance
 
-- 📏 **Size**: ~15KB minified + gzipped
+- 📏 **Size**: ~22KB minified + gzipped
 - ⚡ **Load time**: <100ms
 - 🔄 **Updates**: Every 30 seconds
 - 💾 **Memory**: <2MB usage
