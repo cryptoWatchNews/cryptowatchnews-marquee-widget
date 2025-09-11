@@ -1,9 +1,7 @@
 # 🚀 CryptoMarquee Widget
 
-[![npm version](https://badge.fury.io/js/crypto-marquee-widget.svg)](https://badge.fury.io/js/crypto-marquee-widget)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![File Size](https://img.shields.io/bundlephobia/minzip/crypto-marquee-widget)](https://bundlephobia.com/package/crypto-marquee-widget)
-[![Downloads](https://img.shields.io/npm/dm/crypto-marquee-widget.svg)](https://npmjs.org/package/crypto-marquee-widget)
+
 
 > **A beautiful, lightweight, and customizable cryptocurrency price ticker widget for any website**
 
