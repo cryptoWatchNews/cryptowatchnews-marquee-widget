@@ -14,7 +14,8 @@
         theme: "light",
         showChange: true,
         apiUrl: "https://www.cryptowatchnews.com/api/price/list",
-        showPoweredBy: true
+        showPoweredBy: true,
+        fontSize: 0.8,
     };
 
     // CSS styles intégrés
@@ -278,7 +279,7 @@
             this.config = { ...DEFAULT_CONFIG, ...config };
             this.cryptoData = [];
             this.isDestroyed = false;
-            
+
             this.init();
         }
 
@@ -346,7 +347,7 @@
 
         processData(rawData) {
             const blacklistedSymbols = ["USDT", "USDC", "USDE"];
-            
+
             return rawData
                 .filter(token => !blacklistedSymbols.includes(token.symbol?.toUpperCase()))
                 .map(token => ({
@@ -354,7 +355,7 @@
                     name: token.name,
                     price: parseFloat(token.priceUsd) || 0,
                     change: parseFloat(token.change24hPct) || 0,
-                    icon: token.icon || `https://cdn.jsdelivr.net/gh/spothq/cryptocurrency-icons/32/color/${token.symbol?.toLowerCase()}.png`
+                    icon: `https://www.cryptowatchnews.com/images/tokens/${token.symbol?.toLowerCase()}.svg`,
                 }));
         }
 
@@ -366,13 +367,13 @@
 
             // Créer 4 copies du contenu pour un défilement fluide
             const items = this.cryptoData.map(crypto => this.createCryptoItem(crypto));
-            
+
             if (this.config.showPoweredBy) {
                 items.push(this.createPoweredByItem());
             }
 
             const itemsHTML = items.join("");
-            
+
             marqueeContent.innerHTML = `
                 <div class="cwn-marquee-items">${itemsHTML}</div>
                 <div class="cwn-marquee-items" aria-hidden="true">${itemsHTML}</div>
@@ -393,9 +394,9 @@
                     ${positive ? "▲" : "▼"} ${positive ? "+" : ""}${formatPercentage(change)}
                 </span>
             ` : "";
-
+            const fontSize = this.config.fontSize;
             return `
-                <a href="${href}" class="cwn-crypto-item" target="_blank" rel="noopener">
+                <a href="${href}" class="cwn-crypto-item" style="font-size:${fontSize}rem" target="_blank" rel="noopener">
                     <img 
                         src="${crypto.icon}" 
                         alt="${crypto.name}"
@@ -439,7 +440,7 @@
     // Auto-initialisation
     function initializeWidgets() {
         const widgets = document.querySelectorAll('[id^="crypto-marquee"]');
-        
+
         widgets.forEach(element => {
             if (element.dataset.cwnitialized) return;
 
@@ -449,7 +450,8 @@
                 theme: element.dataset.theme || DEFAULT_CONFIG.theme,
                 showChange: element.dataset.showChange !== 'false',
                 apiUrl: element.dataset.apiUrl || DEFAULT_CONFIG.apiUrl,
-                showPoweredBy: element.dataset.showPoweredBy !== 'false'
+                showPoweredBy: element.dataset.showPoweredBy !== 'false',
+                fontSize: element.dataset.fontSize || DEFAULT_CONFIG.fontSize,
             };
 
             new CryptoMarqueeWidget(element, config);
@@ -475,7 +477,7 @@
                 });
             });
         });
-        
+
         observer.observe(document.body, { childList: true, subtree: true });
     }
 
