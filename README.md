@@ -165,7 +165,7 @@ npm install crypto-marquee-widget
 ```
 
 ### Download Files
-Download the latest release from [GitHub Releases](https://github.com/cryptowatchnews/crypto-marquee-widget/releases)
+Download the latest release from [GitHub Releases](https://github.com/cryptoWatchNews/cryptowatchnews-marquee-widget/releases)
 
 ## 🛠️ Development
 
@@ -227,8 +227,8 @@ A: Fully responsive and touch-friendly.
 
 ## 🐛 Issues & Support
 
-- 🐞 **Bug reports**: [GitHub Issues](https://github.com/cryptowatchnews/crypto-marquee-widget/issues)
-- 💬 **Questions**: [GitHub Discussions](https://github.com/cryptowatchnews/crypto-marquee-widget/discussions)
+- 🐞 **Bug reports**: [GitHub Issues](https://github.com/cryptoWatchNews/cryptowatchnews-marquee-widget/issues)
+- 💬 **Questions**: [GitHub Discussions](https://github.com/cryptoWatchNews/cryptowatchnews-marquee-widget/discussions)
 - 📧 **Email**: support@cryptowatchnews.com
 - 🌐 **Website**: [cryptowatchnews.com](https://www.cryptowatchnews.com)
 
